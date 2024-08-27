@@ -1,2 +1,2 @@
-# KaizenCludProject
-KaizenCludProject
+# KaizenCloudProject
+KaizenCloudProject
