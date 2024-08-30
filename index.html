@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header -->
     <header>
         <div class="logo">
             <h1>Muerati</h1>
@@ -23,51 +22,30 @@
         </nav>
     </header>
 
-    <!-- Main Content -->
     <main>
         <section class="banner">
             <h2>Welcome to Muerati</h2>
-            <p>Your one-stop solution for Automotive Cars, Luxury Cars, Commercial Vehicles, Construction, and Industrial Equipment.</p>
-        </section>
-
-        <section class="brands">
-            <h2>Our Business Verticals</h2>
-            <div class="verticals-container">
-                <div class="vertical">
-                    <h3>Automotive Cars</h3>
-                    <p>Toyota, Lexus, Kia, Ford</p>
-                </div>
-                <div class="vertical">
-                    <h3>Luxury Cars</h3>
-                    <p>Audi, Porsche</p>
-                </div>
-                <div class="vertical">
-                    <h3>Commercial Vehicles</h3>
-                    <p>MAN, Hino</p>
-                </div>
-                <div class="vertical">
-                    <h3>Construction Equipment</h3>
-                    <p>Komatsu</p>
-                </div>
-                <div class="vertical">
-                    <h3>Industrial Equipment</h3>
-                    <p>Toyota</p>
-                </div>
-            </div>
+            <p>Your trusted partner for Automotive, Luxury, Commercial, Construction, and Industrial vehicles.</p>
         </section>
 
         <section class="visit-us">
             <h2>Plan Your Visit</h2>
-            <form>
+            <form action="submit_form.php" method="POST">
+                <!-- Name Input -->
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" placeholder="Mr./Ms." required>
 
+                <!-- Purpose Dropdown -->
                 <label for="purpose">Purpose:</label>
                 <select id="purpose" name="purpose" required>
                     <option value="buy">Buy a New Car</option>
                     <option value="service">Service Your Car</option>
+                    <option value="body_shop">Body shop repairs</option>
+                    <option value="accessories">Buy Accessories</option>
+                    <option value="insurance_renewal">Insurance Renewal</option>
                 </select>
 
+                <!-- Brand Dropdown -->
                 <label for="brand">Brand:</label>
                 <select id="brand" name="brand" required>
                     <option value="toyota">Toyota</option>
@@ -81,9 +59,11 @@
                     <option value="komatsu">Komatsu</option>
                 </select>
 
+                <!-- Model Input -->
                 <label for="model">Model:</label>
                 <input type="text" id="model" name="model" placeholder="Enter model" required>
 
+                <!-- City Dropdown -->
                 <label for="city">City:</label>
                 <select id="city" name="city" required>
                     <option value="city1">City1</option>
@@ -94,18 +74,24 @@
                     <option value="city6">City6</option>
                 </select>
 
+                <!-- Branch Dropdown -->
                 <label for="branch">Branch:</label>
-                <input type="text" id="branch" name="branch" placeholder="Enter branch" required>
+                <select id="branch" name="branch" required>
+                    <option value="main_branch">Main Branch</option>
+                    <option value="sub_branch">Sub Branch</option>
+                    <option value="satalight_workshop">Satalight Workshop</option>
+                </select>
 
+                <!-- Mobile Number Input -->
                 <label for="mobile">Mobile Number:</label>
                 <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
 
+                <!-- Submit Button -->
                 <button type="submit">Submit</button>
             </form>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Muerati. All rights reserved.</p>
     </footer>
